@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { NotificationWidget } from '.'
 
-describe('ExampleComponent', () => {
+describe('NotificationWidget', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(NotificationWidget).toBeTruthy()
   })
 })

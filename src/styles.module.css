@@ -7,3 +7,105 @@
   font-size: 2em;
   text-align: center;
 }
+
+.popover {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  font-weight: 400;
+  white-space: normal;
+  text-align: left;
+  cursor: auto;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.popoverPlacementBottom, .popoverPlacementBottomLeft, .popoverPlacementBottomRight {
+  padding-top: 10px;
+}
+.popoverArrow {
+  position: absolute;
+  display: block;
+  width: 8.48528137px;
+  height: 8.48528137px;
+  background: 0 0;
+  border-style: solid;
+  border-width: 4.24264069px;
+  transform: rotate(45deg);
+  top: 6px;
+  border-color: #fff transparent transparent #fff;
+  -webkit-box-shadow: -2px -2px 5px rgba(0,0,0,.06);
+  box-shadow: -2px -2px 5px rgba(0,0,0,.06);
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  background-color: white;
+}
+.popoverInner {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+  box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+}
+.popoverTitle {
+  min-width: 177px;
+  min-height: 32px;
+  margin: 0;
+  padding: 12px 32px 4px;
+  color: rgba(0,0,0,.85);
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+}
+.popoverInnerContent {
+  padding: 12px 16px;
+  color: rgba(0,0,0,.85);
+  max-height: 400px;
+  overflow: auto;
+}
+.popoverListMainContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.popoverListItem {
+  padding: 5px 0;
+  display: flex;
+}
+.popoverListItemHover {
+  cursor: pointer;
+}
+.popoverListItemHover:hover {
+  background-color: gray;
+}
+.popoverListItemRead {
+  font-weight: bold;
+}
+
+.checkbox {
+  margin: 16px;
+}
+.popoverFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.popoverFooterBtn {
+  font-size: 18px;
+  padding: 5px 30px;
+  cursor: pointer;
+  color: green;
+}

@@ -1,6 +1,13 @@
 import React from 'react'
-import styles from './styles.module.css'
+import Badge from "./components/Badge";
+export { Effect } from "./components/Badge/Effect";
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+const NotificationWidget = ({children, ...props}) => {
+  return (
+    <Badge {...props} >
+      {children}
+    </Badge>
+  )
 }
+
+export default NotificationWidget;
